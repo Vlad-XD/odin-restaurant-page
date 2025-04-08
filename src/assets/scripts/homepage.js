@@ -6,8 +6,8 @@ import imageSource from "../img/homepage.jpg";
 
 // Find added style sheet and attach an id to it
 const stylesheets = document.querySelectorAll("head style");
-const homepageStylesheet = stylesheets[stylesheets.length-1];
-homepageStylesheet.id = "homepage";
+const pageStylesheet = stylesheets[stylesheets.length-1];
+pageStylesheet.id = "homepage";
 
 // function to load page
 const loadPage = () => {
@@ -50,12 +50,12 @@ const loadPage = () => {
 
 // function to enable stylesheet
 function enableStyle() {
-  homepageStylesheet.disabled = false;
+  pageStylesheet.disabled = false;
 }
 
 // function to disable stylesheet
 const disableStyle = () => {
-  homepageStylesheet.disabled = true;
+  pageStylesheet.disabled = true;
 }
 
 export {loadPage, disableStyle};
