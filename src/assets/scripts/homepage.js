@@ -58,4 +58,5 @@ const disableStyle = () => {
   pageStylesheet.disabled = true;
 }
 
+
 export {loadPage, disableStyle};

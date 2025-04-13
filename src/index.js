@@ -5,8 +5,14 @@ import * as menu from "./assets/scripts/menu.js";
 import * as about from "./assets/scripts/about.js";
 import * as locations from "./assets/scripts/locations.js";
 
+// disable imported styles
+homepage.disableStyle();
+menu.disableStyle();
+about.disableStyle();
+locations.disableStyle();
+
 // currentPage variable will hold curretnly active page.
-let currentPage = menu;
+let currentPage = homepage;
 
 // Find content Div element
 const contentContainer = document.querySelector("div#content");
