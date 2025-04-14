@@ -18,6 +18,9 @@ let currentPage = homepage;
 // Find content Div element
 const contentContainer = document.querySelector("div#content");
 
+// Find tab title element
+const tabTitle = document.querySelector("title");
+
 // Find elements used to switch between pages
 const logo = document.querySelector("div.logo");
 const menuBtn = document.querySelector("button.menu");
@@ -62,6 +65,7 @@ function loadPage(page) {
   unloadPage(currentPage);
   page.loadPage()
   currentPage = page;
+  tabTitle.textContent = currentPage.getTitle();
 }
 
 // linkPages: takes a list of objects relating an element and a page module

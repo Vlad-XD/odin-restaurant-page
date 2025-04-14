@@ -9,6 +9,9 @@ const stylesheets = document.querySelectorAll("head style");
 const pageStylesheet = stylesheets[stylesheets.length-1];
 pageStylesheet.id = "homepage";
 
+// page title element
+const pageTitle = "The Burger Joint";
+
 // function to load page
 const loadPage = () => {
   // Enable style
@@ -71,5 +74,9 @@ const disableStyle = () => {
   pageStylesheet.disabled = true;
 }
 
+// function to return page title
+const getTitle = () => {
+  return pageTitle;
+}
 
-export {loadPage, disableStyle};
+export {loadPage, disableStyle, getTitle};

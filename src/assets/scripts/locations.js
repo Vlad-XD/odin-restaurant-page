@@ -127,4 +127,9 @@ const disableStyle = () => {
   pageStylesheet.disabled = true;
 }
 
-export {loadPage, disableStyle};
+// function to return page title
+const getTitle = () => {
+  return pageTitle;
+}
+
+export {loadPage, disableStyle, getTitle};
