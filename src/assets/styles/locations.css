@@ -1,3 +1,50 @@
-body {
-  background-color: purple;
+div#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.location-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.location-content div.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.location-content h2 {
+  font-size: 2.5rem;
+  white-space: nowrap;
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+div.location-content div.content {
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  border-top: 0.05rem solid var(--heading-border-color);
+
+}
+
+div.content img {
+  width: 30rem;
+  height: auto;
+  margin-right: 5rem;
+  border: 0.05rem solid var(--heading-border-color);
+}
+
+div.content div.info-container {
+  font-size: 1.5rem;
+}
+
+div.info-container p {
+  white-space: nowrap;
 }

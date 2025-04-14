@@ -12,4 +12,5 @@ const locationList = [
 ];
 
 
+
 export {locationList};

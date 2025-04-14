@@ -25,7 +25,7 @@ const burgerList =
    content: [
     {item: "Classic Burger",
      price: 20, 
-     description: "The classic american burger Lalo and Ed grew up with. Comes with lettuce, tomato, oniions, pickles, mayo, ketchup and mustard. Toppings can be excluded at request (but we'll look at you funny).",
+     description: "The classic american burger Lalo and Ed grew up with. Comes with lettuce, tomato, onions, pickles, mayo, ketchup and mustard. Toppings can be excluded at request (but we'll look at you funny).",
     },
     {item: "Classic Cheeseburger",
       price: 20, 
@@ -68,7 +68,7 @@ const nonburgerList =
      },
      {item: "House Salad",
       price: 15, 
-      description: "",
+      description: "Lettuce, tomato, onion, cucumber, croutons, bacon pieces, and cheddar cheese. Tossed in buttermilk ranch, balsamic vinagrette, or italian dressing. ",
      },
    ]
   };

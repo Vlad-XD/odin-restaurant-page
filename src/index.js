@@ -1,4 +1,5 @@
 // Import CSS styles
+import "./assets/styles/reset.css";
 import "./assets/styles/common-styles.css";
 import * as homepage from "./assets/scripts/homepage.js";
 import * as menu from "./assets/scripts/menu.js";

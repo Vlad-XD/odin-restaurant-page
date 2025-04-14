@@ -1,3 +1,33 @@
 div#content {
-  background-color: red;
+  /* Gradient on top of BG image helps text be more readable */
+  background: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0)), url("../img/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 15% left 0;
 }
+
+div.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+h1.top {
+  font-size: 4vmax;
+  margin-bottom: -4.5vmax;
+}
+
+h1.bottom {
+  font-size: 12vmax;
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: 1.75vmax;
+}
+
+h3.sub-heading-1 {
+  margin-top: -3.5vmax;
+}
+

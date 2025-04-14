@@ -20,26 +20,39 @@ const loadPage = () => {
   // Make necessary children
   const childrenArray = []; // array that will contain children elements
 
-  const mainHeading = document.createElement("h1");
-  mainHeading.textContent = "The Burger Joint";
-  childrenArray.push(mainHeading);
+  const headingContainer = document.createElement("div");
+  headingContainer.classList.add("heading-container");
+  childrenArray.push(headingContainer);
 
-  const subHeading1 = document.createElement("h3.sub-heading-1");
+  const mainHeadingTop = document.createElement("h1");
+  mainHeadingTop.classList.add("top");
+  mainHeadingTop.textContent = "The";
+  headingContainer.appendChild(mainHeadingTop);
+
+  const mainHeadingBottom = document.createElement("h1");
+  mainHeadingBottom.classList.add("bottom");
+  mainHeadingBottom.textContent = "Burger Joint";
+  headingContainer.appendChild(mainHeadingBottom);
+
+  const subHeading1 = document.createElement("h3");
+  subHeading1.classList.add("sub-heading-1");
   subHeading1.textContent = "Delicious Burgers.";
-  childrenArray.push(subHeading1);
+  headingContainer.appendChild(subHeading1);
 
-  const subHeading2 = document.createElement("h3.sub-heading-2");
+  const subHeading2 = document.createElement("h3");
+  subHeading2.classList.add("sub-heading-2");
   subHeading2.textContent = "Cold Beers.";
-  childrenArray.push(subHeading2);
+  headingContainer.appendChild(subHeading2);
 
-  const subHeading3 = document.createElement("h3.sub-heading-3");
+  const subHeading3 = document.createElement("h3");
+  subHeading3.classList.add("sub-heading-3");
   subHeading3.textContent = "All Night Long.";
-  childrenArray.push(subHeading3);
+  headingContainer.appendChild(subHeading3);
 
   const image = document.createElement("img");
   image.src = imageSource;
   image.setAttribute("alt","plate with delicious burger and fries and beer on table");
-  childrenArray.push(image);
+  // childrenArray.push(image);
 
   // Add children to content Div
   for (const childElement of childrenArray) {

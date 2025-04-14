@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+  --background-color: black;
+  --font-color: white;
+  --nav-border-color: rgba(255, 255, 255, 0.1);
+  --heading-border-color: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Serif 4", TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif; 
+  background-color: var(--background-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  flex-shrink: 0;
+  border-bottom: 0.05rem solid var(--nav-border-color);
+}
+
+header div.logo {
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+header div.logo:hover,
+header nav button:hover {
+  cursor: pointer;
+}
+
+header div.logo h6.top{
+  font-size: 0.75rem;
+}
+
+header div.logo h6.bottom{
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+  white-space: nowrap;
+}
+
+header nav {
+  margin-left: 10rem; /*this will set a minimum distance between logo and nav when using auto margin */
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+header nav button {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+div#content {
+  flex-grow: 1;
+}
+
+footer {
+  height: 3rem;
+  border-top: 0.05rem solid var(--nav-border-color);
+}
+
+/* Styles related to content pages */
+
+
+div.page-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 0.05rem solid var(--heading-border-color);
+}
+
+div.page-heading h1 {
+  font-size: 3rem;
+}
